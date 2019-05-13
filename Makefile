@@ -2,6 +2,7 @@ atelier-editor:
 	@echo "Building editor..."
 	cargo web build -p editor
 	@echo "Editor built!"
+	mkdir -p files/
 	cp target/wasm32-unknown-unknown/debug/main.js files/
 	cp target/wasm32-unknown-unknown/debug/main.wasm files/
 
